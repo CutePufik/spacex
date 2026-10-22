@@ -1,17 +1,41 @@
 .main {
     display: flex;
+    gap: 20px;
+    padding: 20px;
 }
 
 .aside {
-    flex-grow: 0.3;
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
-.content {
-    flex-grow: 0.7;
+.aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-#listContainer{
-    height: 300px;
-    overflow: hidden;
-    overflow-y: scroll;
-    border: black 1px solid;
+
+.aside li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.aside li:hover {
+    background-color: #f0f0f0;
+}
+
+#map svg {
+    background-color: #f9f9f9;
+}
+
+.topo {
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+.launchpad-marker {
+    transition: r 0.2s, fill 0.2s, stroke 0.2s;
 }
